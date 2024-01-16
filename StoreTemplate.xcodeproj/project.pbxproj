@@ -12,6 +12,10 @@
 		2AEEB2252B5716D600036C15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AEEB2242B5716D600036C15 /* Assets.xcassets */; };
 		2AEEB2282B5716D600036C15 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AEEB2272B5716D600036C15 /* Preview Assets.xcassets */; };
 		2AEEB22F2B57170800036C15 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEEB22E2B57170800036C15 /* Store.swift */; };
+		2AEEB2312B574CCB00036C15 /* LifetimeStoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEEB2302B574CCB00036C15 /* LifetimeStoreView.swift */; };
+		2AEEB2332B574CDC00036C15 /* StoreContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEEB2322B574CDC00036C15 /* StoreContent.swift */; };
+		2AEEB2352B574DAE00036C15 /* ITG Revenue Cat.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 2AEEB2342B574DAE00036C15 /* ITG Revenue Cat.storekit */; };
+		2AEEB2382B574DE500036C15 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AEEB2372B574DE500036C15 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		2AEEB2242B5716D600036C15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AEEB2272B5716D600036C15 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2AEEB22E2B57170800036C15 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		2AEEB2302B574CCB00036C15 /* LifetimeStoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifetimeStoreView.swift; sourceTree = "<group>"; };
+		2AEEB2322B574CDC00036C15 /* StoreContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreContent.swift; sourceTree = "<group>"; };
+		2AEEB2342B574DAE00036C15 /* ITG Revenue Cat.storekit */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ITG Revenue Cat.storekit"; sourceTree = "<group>"; };
+		2AEEB2372B574DE500036C15 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AEEB2382B574DE500036C15 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +48,7 @@
 			children = (
 				2AEEB21F2B5716D200036C15 /* StoreTemplate */,
 				2AEEB21E2B5716D200036C15 /* Products */,
+				2AEEB2362B574DE500036C15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +68,9 @@
 				2AEEB2242B5716D600036C15 /* Assets.xcassets */,
 				2AEEB2262B5716D600036C15 /* Preview Content */,
 				2AEEB22E2B57170800036C15 /* Store.swift */,
+				2AEEB2302B574CCB00036C15 /* LifetimeStoreView.swift */,
+				2AEEB2322B574CDC00036C15 /* StoreContent.swift */,
+				2AEEB2342B574DAE00036C15 /* ITG Revenue Cat.storekit */,
 			);
 			path = StoreTemplate;
 			sourceTree = "<group>";
@@ -68,6 +81,14 @@
 				2AEEB2272B5716D600036C15 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2AEEB2362B574DE500036C15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AEEB2372B574DE500036C15 /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AEEB2352B574DAE00036C15 /* ITG Revenue Cat.storekit in Resources */,
 				2AEEB2282B5716D600036C15 /* Preview Assets.xcassets in Resources */,
 				2AEEB2252B5716D600036C15 /* Assets.xcassets in Resources */,
 			);
@@ -141,7 +163,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AEEB22F2B57170800036C15 /* Store.swift in Sources */,
+				2AEEB2312B574CCB00036C15 /* LifetimeStoreView.swift in Sources */,
 				2AEEB2232B5716D300036C15 /* ContentView.swift in Sources */,
+				2AEEB2332B574CDC00036C15 /* StoreContent.swift in Sources */,
 				2AEEB2212B5716D300036C15 /* StoreTemplateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +300,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StoreTemplate/Preview Content\"";
+				DEVELOPMENT_TEAM = 476QK54UU2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -304,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"StoreTemplate/Preview Content\"";
+				DEVELOPMENT_TEAM = 476QK54UU2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

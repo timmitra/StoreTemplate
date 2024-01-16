@@ -64,7 +64,7 @@ class Store: ObservableObject {
       for await result in Transaction.updates {
         do {
           let transaction = try self.checkVerified(result)
-          await.self.updateCustomerProductStatus()
+          await self.updateCustomerProductStatus()
           await transaction.finish()
         } catch {
           print("transaction failed verification")
